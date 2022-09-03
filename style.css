@@ -2,7 +2,9 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  --padding-right: 80px;
+  --padding-right: 100px;
+  --hero-sub-text: rgb(138, 138, 138);
+  --hero-text: rgb(79, 79, 79);
 }
 body {
   width: 100vw;
@@ -11,10 +13,6 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
-
-/* * {
-  border: 1px solid red;
-} */
 
 .mainContainer {
   width: 100%;
@@ -60,7 +58,7 @@ footer {
 .hero {
   font-family: "Alfa Slab One", cursive;
   font-size: 80px;
-  color: rgb(79, 79, 79);
+  color: var(--hero-text);
   text-align: end;
   text-transform: uppercase;
   padding-right: var(--padding-right);
@@ -69,11 +67,19 @@ footer {
 
 .heroSub {
   font-size: 1.5rem;
-  color: rgb(138, 138, 138);
+  color: var(--hero-sub-text);
   padding-right: var(--padding-right);
   text-align: end;
   margin-top: -20px;
   padding-bottom: calc(var(--padding-right) / 2);
+}
+
+legend {
+  margin-left: calc(2 * var(--padding-right));
+  font-size: 1.3rem;
+  padding: calc(var(--padding-right) / 3) 0;
+  font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
 }
 
 .formItem label {
@@ -82,9 +88,11 @@ footer {
 
 .formContainer {
   width: 100%;
-  padding-right: calc(var(--padding-right) * 2);
+
   background: rgb(246, 246, 246);
-  text-align: end;
+  color: var(--hero-sub-text);
+  display: flex;
+  flex-direction: column;
 }
 
 .signUpForm {
@@ -96,11 +104,37 @@ footer {
 .formInnerContent {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 4rem;
+  padding-bottom: calc(var(--padding-right) / 2);
 }
 
 .formCol {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   gap: 0.8rem;
 }
+
+.btnDiv {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: calc(var(--padding-right) / 3);
+}
+
+.btn {
+  padding: 1rem 1.5rem;
+  width: auto;
+  appearance: none;
+  border-radius: 15px;
+  background: var(--hero-sub-text);
+  color: white;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: calc(var(--padding-right) / 3 - 0.8rem);
+}
+
+/* * {
+  border: 1px solid red;
+} */
