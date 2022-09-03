@@ -76,9 +76,31 @@ footer {
   padding-bottom: calc(var(--padding-right) / 2);
 }
 
+.formItem label {
+  padding-right: 1ch;
+}
+
 .formContainer {
   width: 100%;
   padding-right: calc(var(--padding-right) * 2);
   background: rgb(246, 246, 246);
   text-align: end;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.formInnerContent {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+}
+
+.formCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
