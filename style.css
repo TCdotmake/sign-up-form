@@ -73,5 +73,12 @@ footer {
   padding-right: var(--padding-right);
   text-align: end;
   margin-top: -20px;
-  padding-bottom: var(--padding-right);
+  padding-bottom: calc(var(--padding-right) / 2);
+}
+
+.formContainer {
+  width: 100%;
+  padding-right: calc(var(--padding-right) * 2);
+  background: rgb(246, 246, 246);
+  text-align: end;
 }
