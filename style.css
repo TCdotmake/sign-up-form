@@ -47,6 +47,7 @@ footer {
 .contentContainer {
   height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .heroContainer {
@@ -107,6 +108,7 @@ legend {
   justify-content: center;
   gap: 4rem;
   padding-bottom: calc(var(--padding-right) / 3);
+  box-shadow: 2px 2px 3px rgb(246, 246, 246);
 }
 
 .formCol {
@@ -127,21 +129,37 @@ legend {
   width: auto;
   appearance: none;
   border-radius: 15px;
-  background: var(--hero-sub-text);
+  background: blueviolet;
   color: white;
   border: none;
   font-weight: 600;
   font-size: 1.1rem;
   margin-top: calc(var(--padding-right) / 3 - 0.8rem);
+  cursor: pointer;
+  box-shadow: 4px 3px 5px blueviolet;
+  border: 1px solid rgb(210, 161, 255);
 }
 
 .login a {
-  color: var(--hero-text);
+  color: blueviolet;
   text-decoration: underline;
 }
 
 #pwdMsg {
   font-size: 0.8rem;
+}
+
+#contentFooter {
+  position: relative;
+  padding: 0;
+  height: auto;
+}
+
+.copyRight {
+  color: var(--hero-sub-text);
+  position: absolute;
+  right: 2ch;
+  bottom: 2ch;
 }
 
 /* * {

@@ -5,7 +5,7 @@ let pwdMatch = false;
 const noMatch = `<span style="color: red; padding-right: 7ch"
 >* Passwords do not match</span
 >`;
-const match = `<span style="color: blue; padding-right: 15ch"
+const match = `<span style="color: blueviolet; padding-right: 15ch"
 >Password match</span
 >`;
 function compareValue(a, b) {
